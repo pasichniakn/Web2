@@ -40,7 +40,7 @@ function FindStation (name, planet) {
 
 }
 
-// Видалити станцію з колекції
+// Видалити станцію 
 function DeleteStation (name, planet) {
 
     let st = FindStation (name, planet);
@@ -58,7 +58,7 @@ function DeleteStation (name, planet) {
 
 }
 
-// Редагувати станцію в колекції
+// Редагувати станцію 
 function EditStation (name, planet, new_name) {
 
     for (let id = 0; id <  planet.station_list.length; id++) {
@@ -96,8 +96,6 @@ function GetStationList(planet) {
 
 }
 
-
-// Експортуємо функції
 exports.AddStation     = AddStation;
 exports.FindStation    = FindStation;
 exports.DeleteStation  = DeleteStation;

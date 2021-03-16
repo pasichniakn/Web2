@@ -1,6 +1,5 @@
 class Cargo {
 
-    // Конструктор класу
     constructor (name) {
     
         this.name = name;
@@ -28,12 +27,10 @@ function AddCargo (name, station) {
 // Знайти вантаж на станції
 function FindCargo (name, station) {
 
-    for (let id = 0; id < station.cargo_list; id++) {
+    for (let crg of station.cargo_list) {
 
-        let cargo =station.cargo_list[id];
-
-        if (name === cargo.name ){ 
-            return cargo; 
+        if (name === crg.name ){ 
+            return crg; 
         }
 
     }
@@ -66,7 +63,7 @@ function EditCargo (name, station, new_name) {
     if (crg === -1){
 
         return -1;
-        
+
     }
 
     let id = station.cargo_list.indexOf(crg);
@@ -81,12 +78,12 @@ function EditCargo (name, station, new_name) {
 // Отримати список вантажу на станції
 function GetCargoList (station) {
 
-    console.log(`Список всього товару на станції ${station.name}:`);
+    console.log(`Список вантажу на станції ${station.name}:`);
 
     for (let id = 0; id <station.cargo_list.length; id++) {
 
         let cargo = station.cargo_list[id];
-        console.log(`Назва товару: ${cargo.name}`);
+        console.log(`Назва вантажу: ${cargo.name}`);
 
     }
 
@@ -96,7 +93,6 @@ function GetCargoList (station) {
 
 }
 
-// Експортуємо функції
 exports.FindCargo    = FindCargo;
 exports.AddCargo     = AddCargo;
 exports.DeleteCargo  = DeleteCargo;

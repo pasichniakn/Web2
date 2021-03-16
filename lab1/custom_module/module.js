@@ -1,4 +1,3 @@
-// Підключаємо необхідні файли
 const planet = require("./planet");
 const station   = require("./station");
 const cargo  = require("./cargo");

@@ -18,7 +18,7 @@ class Planet {
 // Список усіх планет
 let global_planet_list = new Array();
 
-// Знайти планету в колекції
+// Знайти планету 
 function FindPlanete (name) {
 
     for (let id = 0; id < global_planet_list.length; id++) {
@@ -33,7 +33,7 @@ function FindPlanete (name) {
 
     }
     return -1;
-    
+
 }
 
 // Додавання нової планети
@@ -101,7 +101,6 @@ function GetPlanetList() {
 
 }
 
-// Експортуємо функції
 exports.FindPlanete   = FindPlanete;
 exports.AddPlanete    = AddPlanete;
 exports.DeletePlanet  = DeletePlanet;
