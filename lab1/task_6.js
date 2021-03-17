@@ -7,7 +7,7 @@ class Node {
 }
 class BinarySearchTree {
     constructor(rootValue) {
-        this.root = new Node(rootValue);//створюємо корінь
+        this.root = new Node(rootValue);
     }
 
     insert(currentNode, newValue) {
