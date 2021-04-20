@@ -6,7 +6,7 @@ function NumberDaysFromBeginningYear (year) {
 
     let date_old = new Date(year, 0, 1, 0, 0, 0, 0); //задаємо початок року
 
-    let milliseconds_passed = now.getTime() - date_old.getTime();// Якщо рік не заданий, то задаємо теперішній рік
+    let milliseconds_passed = now.getTime() - date_old.getTime();
 
     let result = milliseconds_passed / 1000 / 60 / 60 / 24;// Переводимо мілісекунди в дні
 
