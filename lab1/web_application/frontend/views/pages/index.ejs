@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<%- include('../blocks/head.ejs'); %>
+
+<body class="bg-dark text-white text-center" style="background-image: url('/web_application/frontend/img/pic1.jpg')">
+<!--
+background-position: center;
+background-repeat:  repeat-y;
+background-attachment: fixed">-->
+
+   <%- include('../blocks/header.ejs'); %>
+
+   <!-- Логотип 
+   <div class="container d-flex justify-content-center my-5">
+      <img src="/web_application/frontend/img/pic2.jpg" class="img-fluid">
+      
+   </div>-->
+    
+
+   <!-- Текст сторінки -->
+   <h1>Програмування web-додатків 2</h1>
+   <h2>Виконала: Пасічняк Наталія</h2>
+   <h3 class="text-info mb-3 "
+       data-bs-toggle="collapse"
+       href="#task"
+       role="button"
+       aria-expanded="false"
+       aria-controls="task"">Варіант №4</h3> 
+   <!-- Блок із завданням -->
+   <div class="collapse" id="task">
+      <div class="container-fluid bg-secondary border-top border-secondary">
+         <div class="row my-3">
+            <!-- Лівий блок -->
+            <div class="col-12 col-md-6">
+               <div class="container-flex">
+                  <p class="text-info fs-4 mx-5">Реалізувати з допомогою прототипів або класів такі інформаційні об’єкти:</p>
+                  <div class="d-inline-block">
+                     <ul class="text-start fs-5">
+                        <li>Космічна станція</li>
+                        <li>Планета</li>
+                        <li>Вантаж</li>
+                        <li>Доставлений вантаж</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!-- Правий блок -->
+            <div class="col-12 col-md-6">
+               <div class="container-flex">
+                  <p class="text-info fs-4 mx-5">Реалізувати такі можливості системи:</p>
+                  <div class="d-inline-block">
+                     <ul class="text-start fs-5">
+                        <li>Додавання нової станції в колекцію</li>
+                        <li>Редагування станції в колекції</li>
+                        <li>Видалення станції з колекції</li>
+                        <li>Пошук однієї станції в колекції</li>
+                        <br>
+                        <li>Додавання планети в колекцію</li>
+                        <li>Редагування планети в колекції</li>
+                        <li>Видалення планети з колекції</li>
+                        <li>Пошук планети в колекції</li>
+                        <br>
+                        <li>Додавання вантажу в колекцію</li>
+                        <li>Редагування вантажу в колекції</li>
+                        <li>Видалення вантажу з колекції</li>
+                        <br>
+                        <li>Пошук усіх станцій планети</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <%- include('../blocks/scripts.ejs'); %>
+</body>
+</html>
