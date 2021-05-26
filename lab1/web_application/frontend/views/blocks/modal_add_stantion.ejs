@@ -1,0 +1,60 @@
+<!-- Модальне вікно -->
+<div class="modal fade" id="modal_stantion" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+
+      <!-- Заголовок модального вікна -->
+      <div class="modal-header border-secondary">
+        <div class="d-flex flex-column">
+          <span class="fs-3 lh-1" id="stantion_title">#Title</span>
+        </div>
+        <button type="button" class="btn-close bg-primary" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Тіло модального вікна -->
+      <div class="modal-body">
+        <form>
+
+          <!-- Прізвище, ім’я, по батькові -->
+          <span class="fs-5">Назва</span>
+          <input class="form-control fs-5 bg-dark text-light border-primary mb-2" id="stantion_name" type="text"
+            placeholder="П.І.Б.">
+
+          <div class="row gx-3">
+            <div class="col-12 col-sm-2">
+
+              <!-- Вік 
+              <span class="fs-5">Вік</span>
+              <input class="form-control fs-5 bg-dark text-light border-primary" id="stantion_age" type="number"
+                placeholder="Вік" oninput="set_age(this)">-->
+            </div>
+
+            <div class="col-12 mb-2 d-block d-sm-none"></div>
+            <div class="col-12 col-sm-10">
+
+              <!-- Лікарня -->
+              <span class="fs-5">Планета</span>
+              <div class="dropdown">
+                <button class="btn btn-outline-primary fs-5 w-100 dropdown-toggle" type="button" id="stantion_planet"
+                  data-bs-toggle="dropdown" aria-expanded="false">Виберіть планету</button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="stantion_planet"
+                  id="stantion_planet_list">
+                  <li><span class="dropdown-item" onclick="set_planet(this)">. . .</span></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Кнопки модального вікна -->
+      <div class="modal-footer border-secondary">
+        <button class="btn btn-outline-primary" id="stantion_yes" data-bs-dismiss="modal"
+          onclick="modal_add_stantion()">#Yes</button>
+        <button class="btn btn-outline-secondary" id="stantion_no" data-bs-dismiss="modal">Відміна</button>
+      </div>
+    </div>
+  </div>
+</div>

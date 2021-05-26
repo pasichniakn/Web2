@@ -3,13 +3,24 @@
 
 <%- include('../blocks/head.ejs'); %>
 
-<body class="bg-dark text-light text-center">
+<body class="bg-dark text-light">
 
-   <%- include('../blocks/header.ejs'); %>
+  <!-- Підключення шапки сайту -->
+  <%- include('../blocks/header.ejs'); %>
 
-   <h1 class="mt-4">Доставлений вантаж</h1>
+  <!-- Підключення блоку керування -->
+  <%- include('../blocks/control.ejs'); %>
 
-   <%- include('../blocks/scripts.ejs'); %>
+  <!-- Додавання таблиці -->
+  <%- include('../blocks/table_start.ejs'); %>
+  <%- include('../blocks/table_head_cargo.ejs'); %>
+  <%- include('../blocks/table_end.ejs'); %>
+
+  <!-- Підключення модальних вікон -->
+  <%- include('../blocks/modal_confirm.ejs'); %>
+
+  <!-- Підключення скриптів -->
+  <%- include('../blocks/scripts.ejs'); %>
 
 </body>
 
